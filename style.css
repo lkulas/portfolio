@@ -25,12 +25,22 @@ nav {
   bottom: 0;
   padding: 20px;
   width: 100%;
-  background: lightgrey;
+  background: #D79922;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
   text-decoration: none;
   color: black;
+}
+
+.project-link {
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .row {
@@ -73,7 +83,7 @@ a {
   #div1 header,
   #div2 header,
   #div6 header {
-  margin-top: 300px;
+  margin-top: 125px;
 }
 }
 
@@ -117,15 +127,18 @@ h2 {
 
 #logos img {
   height: 75px;
-  margin-right: 15px;
+  margin-right: 25px;
 }
 
 .screenshot {
   width: 100%;
+  border: 1px solid black;
 }
 
 .project-header {
   margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .project-text {
@@ -134,13 +147,50 @@ h2 {
 
 .built-with-text {
   text-transform: uppercase;
-  text-decoration: underline;
+  font-weight: 600;
 }
 
-#div6 a {
-  color: orangered;
+.red {
+  color: #F13C20;
 }
 
 #div6 a:hover {
   color: black;
+}
+
+#div6 header {
+  margin-bottom: 25px;
+}
+
+#content {
+  margin-bottom: 100px;
+}
+
+#div1,
+#div2 {
+  max-width: 1000px;
+  margin-left: 0;
+} 
+
+.project-link {
+  display: block;
+}
+
+.project-link a:hover,
+.project-header a:hover {
+  color: black;
+}
+
+.name {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+.blue {
+  color: #4056A1;
+}
+
+.white-hover:hover {
+  color: white;
 }

@@ -6,7 +6,8 @@
     <title>Laura Kulas</title>
     <link href="reset.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Poppins|Roboto" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
   </head>
   <body>
     <main role="main">
@@ -15,7 +16,7 @@
           <div class="col-12">
             <img src="images/chevron-right.png" class="right-arrow-icon">
             <header>
-              <h1>Hi, I'm Laura. I'm a fullstack developer & design enthusiast.</h1>
+              <h1>Hi, I'm Laura. I'm a <span class="blue">fullstack developer</span> <br>& <span class="blue">web design enthusiast</span>.</h1>
               <h2>I create applications that solve problems and delight users.</h2>
             </header>
           </div>
@@ -29,13 +30,14 @@
             </header>
             <h2>I work well with:</h2>
               <div id="logos">
-                <img src="images/html-css-js.png">
-                <img src="images/nodejs.png">
-                <img src="images/react.png">
-                <img src="images/wordpress.png">
-                <img src="images/woocommerce.png">
+                <img src="images/html-css-js.png" alt="HTML, CSS and JavaScript logos">
+                <img src="images/nodejs.png" alt="node.JS logo">
+                <img src="images/react.png" alt="react logo">
               </div>
-            <h3>Besides coding, I'm into fitness, craft cocktails, gaming, and vinyl records.</h3>
+            <p>
+              My background is in the design industry. By combining back-end programming skills with an impeccable eye for front-end design, I build apps and websites that function efficiently and look amazing. <br><br>
+              Besides coding, I'm into fitness, craft cocktails, gaming, and vinyl records.
+            </p>
           </div>
         </div>
         <div id="div3" hidden>
@@ -44,9 +46,9 @@
               <img src="images/chevron-left.png" class="left-arrow-icon">
               <img src="images/chevron-right.png" class="right-arrow-icon">
               <header class="project-header">
-                <h1>01</h1>
+                <h1 class="blue">01</h1>
                 <h2>
-                  <a href="https://lkulas.github.io/pick-your-poison/">Pick Your Poison</a>
+                  <a href="https://lkulas.github.io/pick-your-poison/" class="blue">Pick Your Poison</a>
                 </h2>
               </header>
             </div>
@@ -57,6 +59,12 @@
                 An application that uses a third party API (The Cocktail DB) to explore drink recipes. Users can search by name or ingredient, view a list of drinks by category, or be surprised with a random drink.
               </p><br><br>
               <p class="project-text">
+                <span class="project-link">
+                  <a href="https://lkulas.github.io/pick-your-poison/" class="blue">Live App</a>
+                </span><br>
+                <span class="project-link">
+                  <a href="https://github.com/lkulas/pick-your-poison" class="blue">Code</a>
+                </span><br><br>
                 <span class="built-with-text">Built with:</span><br><br>
                 JavaScript & jQuery
               </p>
@@ -80,9 +88,9 @@
               <img src="images/chevron-left.png" class="left-arrow-icon">
               <img src="images/chevron-right.png" class="right-arrow-icon">
               <header class="project-header">
-                <h1>02</h1>
+                <h1 class="blue">02</h1>
                 <h2>
-                  <a href="https://sheltered-plateau-93284.herokuapp.com/">Waterlogged</a>
+                  <a href="https://sheltered-plateau-93284.herokuapp.com/" class="blue">Waterlogged</a>
                 </h2>
               </header>
             </div>
@@ -90,16 +98,19 @@
           <div class="row">
             <div class="col-6">
               <p class="project-text">
-                An application that uses a third party API (The Cocktail DB) to explore drink recipes. Users can search by name or ingredient, view a list of drinks by category, or be surprised with a random drink.
-                </p><br><br>
+                A full stack Javascript application with a RESTful API that helps users track their plant collection and watering schedules.
+              </p><br><br>
               <p class="project-text">
+                <span class="project-link">
+                  <a href="https://sheltered-plateau-93284.herokuapp.com/" class="blue">Live App</a>
+                </span><br>
+                <span class="project-link">
+                  <a href="https://github.com/lkulas/waterlogged" class="blue">Code</a>
+                </span><br><br>
                 <span class="built-with-text">Built with:</span><br><br>
                 Front end: JavaScript & jQuery<br><br>
                 Back end: Node.js, MongoDB, Mongoose, Mocha, Chai, Express, Passport, bcryptjs, JWT Authentication<br><br>
-                DevOps: TravisCI, mLab, Heroku<br><br>
-                <span class="project-link">
-                  <a href="https://github.com/lkulas/waterlogged">View code on Github</a>
-                </span>
+                DevOps: TravisCI, mLab, Heroku
               </p>
             </div>
             <div class="col-6">
@@ -108,10 +119,10 @@
           </div>
           <div class="row">
             <div class="col-6">
-              <img src="" class="screenshot">
+              <img src="images/02/main.png" class="screenshot">
             </div>
             <div class="col-6">
-              <img src="" class="screenshot">
+              <img src="images/02/details.png" class="screenshot">
             </div>
           </div>
         </div>
@@ -121,9 +132,9 @@
               <img src="images/chevron-left.png" class="left-arrow-icon">
               <img src="images/chevron-right.png" class="right-arrow-icon">
               <header class="project-header">
-                <h1>03</h1>
+                <h1 class="blue">03</h1>
                 <h2>
-                  <a href="https://trademark-garden.com/">Trademark Garden</a>
+                  <a href="https://trademark-garden.com/" class="blue">Trademark Garden</a>
                 </h2>
               </header>
             </div>
@@ -134,20 +145,23 @@
                 A full scale e-commerce website built with Elementor for Wordpress. Integrates with WooCommerce for user accounts, products, and payment processing. Supports MailChimp marketing and SendinBlue transactional emails. Currently in use by the online law firm, Trademark Garden.
                 </p><br><br>
               <p class="project-text">
+                <span class="project-link">
+                  <a href="https://trademarkgarden.com/" class="blue">Live Site</a>
+                </span><br><br>
                 <span class="built-with-text">Built with:</span><br><br>
                 Wordpress, Elementor, & WooCommerce
               </p>
             </div>
             <div class="col-6">
-              <img src="" class="screenshot">
+              <img src="images/03/landing.png" class="screenshot">
             </div>
           </div>
           <div class="row">
             <div class="col-6">
-              <img src="" class="screenshot">
+              <img src="images/03/blog.png" class="screenshot">
             </div>
             <div class="col-6">
-              <img src="" class="screenshot">
+              <img src="images/03/packages.png" class="screenshot">
             </div>
           </div>
         </div>
@@ -156,8 +170,20 @@
             <img src="images/chevron-left.png" class="left-arrow-icon">
             <header>
               <h1>Want to get in touch?</h1>
-              <h2>Give me a <a href="tel:4802259290">call</a> or drop me an <a href="mailto:laura.kulas@gmail.com">email</a> anytime.</h2>
+              <h2>
+                Give me a 
+                <a href="tel:4802259290" class="red">call</a> 
+                or drop me an 
+                <a href="mailto:laura.kulas@gmail.com" class="red">email</a> 
+                anytime.
+              </h2>
             </header>
+            <p>
+              You can also find me on 
+              <a href="https://www.linkedin.com/in/laura-kulas-17aa6384" class="red">LinkedIn</a> 
+              and 
+              <a href="https://github.com/lkulas" class="red">GitHub</a>.
+            </p>
           </div>
         </div>
       </div>
@@ -166,10 +192,20 @@
       <div class="row">
         <div class="col-12">
           <ul>
-            <li><a href="">Laura Kulas</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Work</a></li>
-            <li><a href="">Contact</a></li>
+            <li>
+              <a href="" class="nav-link" id="nav1">
+                <span class="name">Laura Kulas</span>
+              </a>
+            </li>
+            <li>
+              <a href="" class="nav-link white-hover" id="nav2">About</a>
+            </li>
+            <li>
+              <a href="" class="nav-link white-hover" id="nav3">Work</a>
+            </li>
+            <li>
+              <a href="" class="nav-link white-hover" id="nav4">Contact</a>
+            </li>
           </ul>
         </div>
       </div>
