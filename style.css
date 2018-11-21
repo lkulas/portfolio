@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: white;
+  margin-top: 30px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline;
+  margin-left: 30px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 20px;
+  width: 100%;
+  background: lightgrey;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.row {
+  max-width: 1300px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 0 auto;
+}
+
+.row::before,
+.row::after {
+	display: table;
+	content: '';
+}
+
+.row::after {
+	clear: both;
+}
+
+.col-6, 
+.col-4, 
+.col-12 {
+	float: left;
+	padding-left: 1.0416666%;
+	padding-right: 1.0416666%;
+	width: 100%;
+  margin-top: 15px;
+}
+
+@media only screen and (min-width: 640px) {
+	.col-6 {
+		width: 50%;
+	}
+	.col-4 {
+		width: 33%;
+	}
+  .col-12 {
+    width: 100%;
+  }
+  #div1 header,
+  #div2 header,
+  #div6 header {
+  margin-top: 300px;
+}
+}
+
+header h1, h2 {
+  text-align: left;
+}
+
+header h1 {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+.right-arrow-icon {
+  position: fixed;
+  right: 0;
+  top: 50%;
+}
+
+.left-arrow-icon {
+  position: fixed;
+  left: 0;
+  top: 50%;
+}
+
+.left-arrow-icon,
+.right-arrow-icon {
+  cursor: pointer;
+}
+
+#logos {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#logos img {
+  height: 75px;
+  margin-right: 15px;
+}
+
+.screenshot {
+  width: 100%;
+}
+
+.project-header {
+  margin-bottom: 30px;
+}
+
+.project-text {
+  text-align: right;
+}
+
+.built-with-text {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+#div6 a {
+  color: orangered;
+}
+
+#div6 a:hover {
+  color: black;
+}
