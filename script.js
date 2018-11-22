@@ -60,7 +60,7 @@ function watchClickWork() {
 function watchClickContact() {
   $('#nav4').on('click', event => {
     event.preventDefault();
-    currentView = 6;F8F3E3
+    currentView = 6;
     for (let i=1; i <= pageCount; i++) {
       $(`#div${i}`).prop('hidden', true);
     };
