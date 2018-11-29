@@ -10,7 +10,6 @@ a {
 body {
   font-family: 'Poppins', sans-serif;
   background: white;
-  margin-top: 30px;
 }
 
 h1 {
@@ -22,17 +21,10 @@ h2 {
 }
 
 header h1 {
-  margin-bottom: 20px;
-}
-
-header h1, h2 {
-  text-align: left;
+  margin-bottom: 10px;
 }
 
 nav {
-  position: fixed;
-  left: 0;
-  bottom: 0;
   padding: 10px;
   width: 100%;
   background: #9A6D18;
@@ -57,6 +49,10 @@ p {
   color: #4056A1;
 }
 
+.bold {
+  font-weight: 600;
+}
+
 .built-with-text {
   text-transform: uppercase;
   font-weight: 600;
@@ -72,14 +68,14 @@ p {
   margin-top: 15px;
 }
 
-#content {
-  margin-bottom: 150px;
-}
-
-#div1,
+#div1, 
 #div2 {
   max-width: 1000px;
-} 
+}
+
+#div1 h1 {
+  margin-bottom: 30px;
+}
 
 #div6 a:hover {
   color: black;
@@ -98,11 +94,17 @@ p {
 .left-arrow-icon,
 .right-arrow-icon {
   cursor: pointer;
+  height: 50px;
 }
 
 #logos {
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+#logos img {
+  margin-right: 25px;
+  height: 100px;
 }
 
 .name {
@@ -112,10 +114,12 @@ p {
 }
 
 .project-header {
-  margin-bottom: 30px;
   text-transform: uppercase;
   letter-spacing: 3px;
+  text-align: right;
+  margin-bottom: 30px;
 }
+
 .project-link {
   font-style: italic;
   text-transform: uppercase;
@@ -137,10 +141,11 @@ p {
 }
 
 .row {
-  max-width: 1300px;
+  max-width: 1600px;
   padding-left: 50px;
   padding-right: 50px;
-  margin: 0 auto;
+  margin: auto auto;
+  text-align: center;
 }
 
 .row::after {
@@ -181,21 +186,14 @@ p {
   .col-12 {
     width: 100%;
   }
-  #div1 header,
-  #div2 header,
-  #div6 header {
-    margin-top: 125px;
-  }
-  #div1,
-  #div2,
-  #div6 {
-    margin-left: 100px;
-  }
   #content {
-    margin-bottom: 100px;
+    margin-top: 50px;
   }
   nav {
-    padding: 20px;
+    padding: 10px;
+  }
+  nav ul {
+    text-align: left;
   }
   nav li {
     margin-left: 30px;
