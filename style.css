@@ -3,31 +3,28 @@
 }
 
 a {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
   background: white;
+  font-family: 'Poppins', sans-serif;
 }
 
 h1 {
   font-size: 2em;
+  margin-bottom: 10px;
 }
 
 h2 {
   font-size: 1.5em;
 }
 
-header h1 {
-  margin-bottom: 10px;
-}
-
 nav {
+  background: #9A6D18;
   padding: 10px;
   width: 100%;
-  background: #9A6D18;
 }
 
 nav a {
@@ -43,10 +40,10 @@ nav ul {
 }
 
 nav li {
-  text-transform: uppercase;
+  font-size: 12px;
   letter-spacing: 5px;
   margin-bottom: 5px;
-  font-size: 12px;
+  text-transform: uppercase;
 }
 
 p {
@@ -66,40 +63,31 @@ p {
 }
 
 .built-with-text {
-  text-transform: uppercase;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .col-6, 
 .col-4, 
 .col-12 {
   float: left;
+  margin-top: 15px;
   padding-left: 1.0416666%;
   padding-right: 1.0416666%;
   width: 100%;
-  margin-top: 15px;
 }
 
-#div1, 
-#div2 {
-  max-width: 1000px;
-}
-
-#div1 h1 {
-  margin-bottom: 30px;
-}
-
-#div6 a:hover {
-  color: black;
-}
-
-#div6 header {
+.contact-header {
   margin-bottom: 25px;
 }
 
+.hover-black:hover {
+  color: black;
+}
+
 .left-arrow-icon {
-  position: fixed;
   left: 0;
+  position: fixed;
   top: 50%;
 }
 
@@ -109,14 +97,14 @@ p {
   height: 50px;
 }
 
-#logos {
-  margin-top: 30px;
+.logos {
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
-#logos img {
-  margin-right: 25px;
+.logos img {
   height: 100px;
+  margin-right: 25px;
 }
 
 .name {
@@ -125,21 +113,21 @@ p {
 }
 
 .profile-picture {
-  width: 250px;
   border-radius: 50%;
+  width: 250px;
 }
 
 .project-header {
-  text-transform: uppercase;
   letter-spacing: 3px;
-  text-align: right;
   margin-bottom: 30px;
+  text-align: right;
+  text-transform: uppercase;
 }
 
 .project-link {
   font-style: italic;
-  text-transform: uppercase;
   letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .project-text {
@@ -157,10 +145,10 @@ p {
 }
 
 .row {
+  margin: auto auto;
   max-width: 1600px;
   padding-left: 50px;
   padding-right: 50px;
-  margin: auto auto;
   text-align: center;
 }
 
@@ -170,13 +158,13 @@ p {
 
 .row::before,
 .row::after {
+  content: '';
 	display: table;
-	content: '';
 }
 
 .screenshot {
-  width: 100%;
   border: 1px solid black;
+  width: 100%;
 }
 
 .project-link {
@@ -198,7 +186,7 @@ p {
   .col-12 {
     width: 100%;
   }
-  #content {
+  .content {
     margin-top: 50px;
   }
   nav {
@@ -208,9 +196,9 @@ p {
     text-align: left;
   }
   nav li {
-    margin-left: 30px;
     display: inline;
     font-size: 16px;
+    margin-left: 30px;
   }
   .name {
     font-size: 20px;

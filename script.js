@@ -1,3 +1,8 @@
+/*jshint esversion: 6 */
+/*globals $:false */
+/* jshint node: true */
+/* jshint browser: true */
+
 'use strict';
 
 let currentView = 1;
@@ -7,11 +12,10 @@ const pageCount = document.getElementById('content').children.length;
 function removeActive() {
   for (let i=1; i <= 4; i++) {
     $(`#nav${i}`).removeClass('active');
-  };
-};
+  }
+}
 
 function watchActivePage() {
-  console.log(currentView);
   removeActive();
   if (currentView === 1) {
     $('#nav1').addClass('active');
@@ -25,8 +29,8 @@ function watchActivePage() {
     $('#nav3').addClass('active');
   }  else {
     $('#nav4').addClass('active');
-  };
-};
+  }
+}
 
 function watchClickRight() {
   $('.right-arrow-icon').on('click', event => {
@@ -34,10 +38,10 @@ function watchClickRight() {
     watchActivePage();
     for (let i=1; i <= pageCount; i++) {
       $(`#div${i}`).prop('hidden', true);
-    };
+    }
     $(`#div${currentView.toString()}`).prop('hidden', false);
   });
-};
+}
 
 function watchClickLeft() {
   $('.left-arrow-icon').on('click', event => {
@@ -45,10 +49,10 @@ function watchClickLeft() {
     watchActivePage();
     for (let i=1; i <= pageCount; i++) {
       $(`#div${i}`).prop('hidden', true);
-    };
+    }
     $(`#div${currentView.toString()}`).prop('hidden', false);
   });
-};
+}
 
 function watchClickName() {
   $('#nav1').on('click', event => {
@@ -57,10 +61,10 @@ function watchClickName() {
     watchActivePage();
     for (let i=1; i <= pageCount; i++) {
       $(`#div${i}`).prop('hidden', true);
-    };
+    }
     $('#div1').prop('hidden', false);
   });
-};
+}
 
 function watchClickAbout() {
   $('#nav2').on('click', event => {
@@ -69,10 +73,10 @@ function watchClickAbout() {
     watchActivePage();
     for (let i=1; i <= pageCount; i++) {
       $(`#div${i}`).prop('hidden', true);
-    };
+    }
     $('#div2').prop('hidden', false);
   });
-};
+}
 
 function watchClickWork() {
   $('#nav3').on('click', event => {
@@ -81,10 +85,10 @@ function watchClickWork() {
     watchActivePage();
     for (let i=1; i <= pageCount; i++) {
       $(`#div${i}`).prop('hidden', true);
-    };
+    }
     $('#div3').prop('hidden', false);
   });
-};
+}
 
 function watchClickContact() {
   $('#nav4').on('click', event => {
@@ -93,23 +97,23 @@ function watchClickContact() {
     watchActivePage();
     for (let i=1; i <= pageCount; i++) {
       $(`#div${i}`).prop('hidden', true);
-    };
+    }
     $('#div6').prop('hidden', false);
   });
-};
+}
 
 function handleNav() {
   watchClickName();
   watchClickAbout();
   watchClickWork();
   watchClickContact();
-};
+}
 
 function handlePage() {
   watchClickRight();
   watchClickLeft();
   handleNav();
   watchActivePage();
-};
+}
 
 $(handlePage());
