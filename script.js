@@ -27,7 +27,9 @@ function watchActivePage() {
     $('#nav3').addClass('active');
   } else if (currentView === 5) {
     $('#nav3').addClass('active');
-  }  else {
+  } else if (currentView === 6) {
+    $('#nav3').addClass('active');
+  } else {
     $('#nav4').addClass('active');
   }
 }
@@ -93,12 +95,12 @@ function watchClickWork() {
 function watchClickContact() {
   $('#nav4').on('click', event => {
     event.preventDefault();
-    currentView = 6;
+    currentView = 7;
     watchActivePage();
     for (let i=1; i <= pageCount; i++) {
       $(`#div${i}`).prop('hidden', true);
     }
-    $('#div6').prop('hidden', false);
+    $('#div7').prop('hidden', false);
   });
 }
 
